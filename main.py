@@ -2,8 +2,8 @@
 from calculator.evaluation import evaluate
 try:
     base = int(input('Enter the base (2-62): '))
-    if base not in [2, 8, 10, 16, 36]:
-        print("Invalid input. Please enter a valid base (2, 8, 10, 16, 36, 62).")
+    if base not in [2, 8, 10, 16, 36, 62]:
+        print("Invalid input. Please enter a valid base (2, 10, 16, 36, 62).")
         exit()
     x = input('Enter first number: ')
     y = input('Enter second number: ')
