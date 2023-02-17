@@ -23,8 +23,6 @@ def to_base(num, base):
     try:
         if base == 2:
             return bases.toBase2(num)
-        elif base == 8:
-            return bases.toBase8(num)
         elif base == 10:
             return num
         elif base == 16:

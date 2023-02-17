@@ -15,15 +15,19 @@ def divide(x, y):
 
 def evaluate (x,y,choice):
     result_1 = None
-    if choice == 1:
-        result_1 = x + y
+    try:
+        if choice == 1:
+            result_1 = x + y
 
-    elif choice == 2:
-        result_1 = x - y
+        elif choice == 2:
+            result_1 = x - y
 
-    elif choice == 3:
-        result_1 = x * y
+        elif choice == 3:
+            result_1 = x * y
 
-    elif choice == 4:
-        result_1 = x / y
-    return result_1
+        elif choice == 4:
+            result_1 = x / y
+        return result_1
+    except (TypeError, ZeroDivisionError) as e:
+        print("Something bad happened!", e)
+        exit()
